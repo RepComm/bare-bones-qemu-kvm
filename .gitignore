@@ -1,3 +1,5 @@
 disk.qcow
+disk-snapshot.qcow
 log.txt
 archlinux-2021.07.01-x86_64.iso
+archlinux-2021.07.01-x86_64.iso.sig

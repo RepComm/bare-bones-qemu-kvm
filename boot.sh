@@ -10,11 +10,15 @@ if [ "$yn" = "y" ]; then
   
   sudo qemu-system-x86_64 \
     -enable-kvm \
-    -drive file=disk.qcow,format=qcow2 \
     -cpu host \
-    -nographic \
-    -m 1024
-  
+    -boot menu=on \
+    -boot order=d \
+    -drive file=disk-snapshot.qcow,format=qcow2 \
+    -m 2G \
+    -curses \
+    -net user,hostfwd=tcp::10022-:22 \
+    -net nic \
+    #-nic user,hostfwd=tcp::10022-:22
   # TODO
 else
   echo "Exiting script without performing $purpose"

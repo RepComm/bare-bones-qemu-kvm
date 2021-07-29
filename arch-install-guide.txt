@@ -1,0 +1,22 @@
+
+https://youtu.be/cM2UDz8BepU
+
+https://wiki.archlinux.org/title/Help:Reading#Installation_of_packages
+
+https://aktasfatih.com/grub-bootloader-for-arch-linux/
+
+GRUB_DISABLE_OS_PROBER=false
+https://wiki.archlinux.org/title/GRUB#Generate_the_main_configuration_file
+
+setting root password from live CD
+# mount /dev/sda1 /mnt
+
+Mounting your system partition to /mnt
+
+# arch-chroot /mnt
+
+Rooting into the system as root
+
+# passwd
+
+Set the password.
